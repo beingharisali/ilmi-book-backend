@@ -1,14 +1,14 @@
-const express=require('express')
-const orderController=require("../controllers/Order")
-const router=express.Router()
+const express = require('express')
+const orderController = require("../controllers/Order")
+const router = express.Router()
 
 
 router
-    .post("/",orderController.create)
-    .get("/",orderController.getAll)
-    .get("/user/:id",orderController.getByUserId)
-    .delete("/:id",orderController.deltebyId)
-    .patch("/:id",orderController.updateById)
-    
+    .post("/", orderController.create)
+    .get("/", orderController.getAll)
+    .get("/user/:id", orderController.getByUserId)
+    .delete("/:id", orderController.deltebyId)
+    .patch("/:id", orderController.updateById)
 
-module.exports=router
+
+module.exports = router
